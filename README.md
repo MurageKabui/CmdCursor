@@ -10,18 +10,15 @@
 <li>
 <p>May be used in the back-end  in scenarios where a user may want to change the mouse cursor for :</p>
 <blockquote>
-<p>📐🕵🏽 Pixel Painting precision (I.e. during editing)<br>
+<p>📐Pixel Painting precision (I.e. during editing)<br>
 🎫 Allow different pointers for various applications during presentations.👨🏼‍🏫<br>
 🎮 Game development (I.e. shooting precision 💥🔫)<br>
 😎 Fancy pointers during screen recording.<br>
 🤪 Custom RainMeter skin Cursors.</p>
 </blockquote>
-<p><em>etc …</em></p>
 </li>
 </ul>
-<p>📰 Applications mainly implement custom cursors from binary resources like executable (.exe) files or DLLs, rather than creating the cursor    at run time. <br> However CmdCursor lets you call a graphic directly from    a .ANI or .CUR resource.<br>
-<img src="[C:/Users/$km/Desktop/demoRot13.gif](C:/Users/$km/Desktop/demoRot13.gif)" align="center"></p>
- <img src="C:/Users/$km/Desktop/demoRot13.gif" align="center">
+<p>📰 Applications mainly implement custom cursors from binary resources like executable (.exe) files or DLLs, rather than creating the cursor    at run time. <br> However CmdCursor lets you call a graphic directly from    a .ANI or .CUR resource.</p>
 <h3 id="💡-syntax-and-usage">💡 Syntax and Usage</h3>
 <p><code>CmdCursor.dll /?</code> or <code>CmdCursor.dll --?</code> or <code>CmdCursor.dll -?</code></p>
 <blockquote>
