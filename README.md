@@ -1,5 +1,5 @@
 ---
-![](lol.gif)
+
 
 ---
 
@@ -16,7 +16,7 @@
 </blockquote>
 </li>
 </ul>
-<p>📰 Applications mainly implement custom cursors from binary resources like executable (.exe) files or DLLs, rather than creating the cursor    at run time. <br> However CmdCursor lets you call a graphic directly from    a .ANI or .CUR resource.</p>
+<p>Applications mainly implement custom cursors from binary resources like executable (.exe) files or DLLs, rather than creating the cursor    at run time. <br> However CmdCursor lets you call a graphic directly from    a .ANI or .CUR resource.</p>
 <h3 id="💡-syntax-and-usage">💡 Syntax and Usage</h3>
 <p><code>CmdCursor.dll /?</code> or <code>CmdCursor.dll --?</code> or <code>CmdCursor.dll -?</code></p>
 <blockquote>
@@ -28,10 +28,10 @@
 <p>The above example toggles the cursor for VLC media player window ,to change from the default cursor to a cursor in the working directory <br>  called <code>Mycursor.ani</code> CmdCursor.dll exits after VLC is closed.</p>
 </blockquote>
 <h4 id="💡-nb-">💡 NB :</h4>
-<p>🎫🎫 Forced properties in various UI controls ( i.e. edit controls, labels    and buttons) may explicitly force the mouse cursor to change , <br>  therefore <strong>CmdCursor</strong> won’t have any effect on these  type of controls, unless their properties allow their associated control cursor to be overridden.</p>
-<p>🔁🔁 To allow redrawing the new cursor on a target window (after calling <strong>CmdCursor.dll</strong>), the old cursor is not overridden until ; <br> either the mouse moves From and To the window, focus is regained, or a system command is executed so the system automatically redraws the <br> cursor design associated with the window to which the cursor is pointing.</p>
-<p>🏴‍☠️Destroying the target window while CmdCursor is running will get you stuck to a custom cursor, to avoid this , emulate a separate instance using  <code>Start</code> command. For help  , run <code>Start /?</code> at the cmd console.</p>
-<p>🔰🔰 Cursors can not only be either monochrome or color but also static or animated. The type of cursor used on a particular computer system depends <br>  on the system’s display. Therefore, old displays such as VGA do not support color or animated cursors. New displays, whose display drivers use the device-independent bitmap (BID) engine, do support them 👌</p>
+<p>Properties in various UI controls ( i.e. edit controls, labels    and buttons) may explicitly force the mouse cursor to change , <br>  therefore <strong>CmdCursor</strong> won’t have any effect on these  type of controls, unless their properties allow their associated control cursor to be overridden.</p>
+<p>To allow redrawing the new cursor on a target window (after calling <strong>CmdCursor.dll</strong>), the old cursor is not overridden until ; <br> either the mouse moves From and To the window, focus is regained, or a system command is executed so the system automatically redraws the <br> cursor design associated with the window to which the cursor is pointing.</p>
+<p>Destroying the target window while CmdCursor is running will get you stuck to a custom cursor, to avoid this , emulate a separate instance using  <code>Start</code> command. For help  , run <code>Start /?</code> at the cmd console.</p>
+<p>Cursors can not only be either monochrome or color but also static or animated. The type of cursor used on a particular computer system depends <br>  on the system’s display. Therefore, old displays such as VGA do not support color or animated cursors. New displays, whose display drivers use the device-independent bitmap (BID) engine, do support them.</p>
 <h2 id="exit-codes">Exit Codes</h2>
 <p>If the FQPN to the cursor ID not valid, or the window title is not found, then CmdCursor will terminate with an exit-code. <br> This exit codes will be  parsed to DOS variable <code>%errorlevel%</code> and can be verified using; <code>Echo %errorlevel%</code></p>
 <pre><code>✔️✔️ (0) - Success / No Error.  
