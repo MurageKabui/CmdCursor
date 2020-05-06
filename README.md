@@ -3,6 +3,7 @@
 
 ---
 
+<p><img src="lol.gif" alt=""></p>
 <p>🍂Versatile Win32 console application that allows you to temporarily change a window’s associated mouse cursor, based on the window title.</p>
 <ul>
 <li>
